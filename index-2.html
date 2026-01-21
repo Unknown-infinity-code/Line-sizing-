@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pipe Line Sizing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Pipe Line Sizing</h2>
+
+    <label>Flow Rate (m³/hr)</label>
+    <input type="number" id="flow" placeholder="Enter flow rate">
+
+    <label>Suction Velocity (m/s)</label>
+    <input type="number" id="vsuction" placeholder="e.g. 0.6">
+
+    <label>Discharge Velocity (m/s)</label>
+    <input type="number" id="vdischarge" placeholder="e.g. 1.5">
+
+    <label>Overflow Velocity (m/s)</label>
+    <input type="number" id="voverflow" placeholder="e.g. 0.8">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
